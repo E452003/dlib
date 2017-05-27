@@ -1606,6 +1606,12 @@ namespace dlib
             deserialize(item.mask, in);
         }
 
+        void clean(
+        ) 
+        {
+            mask.clear();
+        }
+
         friend std::ostream& operator<<(std::ostream& out, const dropout_& item)
         {
             out << "dropout\t ("
